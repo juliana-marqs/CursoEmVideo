@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar melhor a experiência.</p>
+
+    <h2>Lobo</h2>
+    <picture>
+        <source media="(max-width: 800px)" srcset="imagens/lobo-350.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/lobo-750.jpg" type="image/jpg">
+        <img src="imagens/lobo-1000.jpg" alt="imagem de lobo">
+    </picture>
+
+    <h2>Paisagem</h2>
+    <picture>
+        <source media="(max-width: 790px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="paisagem">
+    </picture>
+</body>
+</html>
